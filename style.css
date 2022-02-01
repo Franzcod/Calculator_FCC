@@ -1,0 +1,144 @@
+.container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(199, 191, 191);
+    padding: 20px 20px;
+    margin: 50px auto;
+    width: fit-content;
+    border-radius: 10px;
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+}
+
+.header {
+    /* background-color: yellow; */
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.fcc {
+    color: rgb(4, 73, 4);
+}
+
+.panel {
+    background-color: rgb(117, 112, 112);
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "dis dis dis dis"
+        "AC C div times"
+        "seven eight nine minus"
+        "four five six plus"
+        "one two three equal"
+        "zero zero dot equal";
+    ;
+}
+
+
+.padButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.padButton:hover {
+    /* background-color: transparent; */
+    /* box-shadow: inset 0 0 10px #000000; */
+}
+
+.padButton:active {
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.tomato {
+    background-color: tomato;
+}
+
+.blue {
+    background-color: #5599ff
+}
+
+
+.dark-grey {
+    background-color: #333;
+}
+
+.dis {
+    background-color: black;
+    text-align: right;
+    font-size: 20px;
+    grid-area: dis;
+    height: 90px;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: "Calculator";
+    src: url('./Calculator.ttf');
+}
+
+@import url('./Calculator.ttf');
+
+.dis input {
+    width: 98%;
+    text-align: right;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(201, 201, 50);
+    padding: 5px 0px 0 0;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    font-family: 'Calculator', sans-serif;
+}
+
+input::placeholder {
+    color: rgb(201, 201, 50);
+}
+
+
+.total {
+    padding: 5px 10px;
+    color: rgb(47, 214, 47);
+    font-size: 50px;
+    font-family: 'Calculator', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+.zero {
+    grid-area: zero;
+}
+
+.equals {
+    grid-area: equal;
+}
